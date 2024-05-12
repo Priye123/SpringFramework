@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Teacher class -->
+	<bean class="userdefinedDI.springcontainer.Teacher" id="teacher"
+		p:name="Sameer" />
+
+	<!-- Student Class -->
+	<bean class="userdefinedDI.springcontainer.Student" id="student1"
+		p:id="20" p:teacher-ref="teacher" />
+
+	<bean class="userdefinedDI.springcontainer.Student" id="student2"
+		p:id="30" p:teacher-ref="teacher" />
+
+	<bean class="userdefinedDI.springcontainer.Student" id="student3"
+		p:id="40" p:teacher-ref="teacher" />
+
+	<bean class="userdefinedDI.springcontainer.Student" id="student4"
+		p:id="50" p:teacher-ref="teacher" />
+
+	<bean class="userdefinedDI.springcontainer.Student" id="student5"
+		p:id="60" p:teacher-ref="teacher" />
+</beans>

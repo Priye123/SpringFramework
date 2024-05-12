@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean class="setterinjection.list.Hospital" id="h"> <property name="name" 
+		value="APOLLO" /> <property name="departments"> <list> <value>Surgery</value> 
+		<value>Orthopedics</value> <value>Surgery</value> <value>Surgery</value> 
+		<value>ENT</value> <value>Cardiology</value> <value>Surgery</value> </list> 
+		</property> </bean> -->
+
+	<bean class="setterinjection.set.Hospital" id="h">
+		<property name="name" value="APOLLO" />
+		<property name="departments">
+			<set>
+				<value>Surgery</value>
+				<value>Orthopedics</value>
+				<value>Surgery</value>
+				<value>ENT</value>
+				<value>Surgery</value>
+				<value>Cardiology</value>
+				<value>Surgery</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean class="setterinjection.map.Hospital" id="h">
+		<property name="name" value="APOLLO" />
+		<property name="patients">
+			<map>
+				<entry key="123" value="Raman" />
+				<entry key="456" value="Gagan" />
+				<entry key="723" value="Pandola" />
+				<entry key="836" value="Rakhi" />
+				<entry key="123" value="Pakora" />
+			</map>
+		</property>
+	</bean>
+
+	<bean class="setterinjection.properties.Hospital" id="h">
+		<property name="name" value="APOLLO" />
+		<property name="patients">
+			<props>
+				<prop key="123">Raman</prop>
+				<prop key="456">Mogli</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

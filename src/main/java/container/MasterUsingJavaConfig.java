@@ -11,7 +11,7 @@ public class MasterUsingJavaConfig {
 	public static void main(String[] args) {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(JavaSpringConfigFile.class);
-		Student student = (Student) context.getBean("s");
+		Student student = (Student) context.getBean("sameer");
 		System.out.println(student.toString());
 	}
 

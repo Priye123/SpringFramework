@@ -15,7 +15,7 @@ public class JavaSpringConfigFile {
 //    <!--        <property name="email" value="priyerock@gmail.com"/>-->
 //    <!--    </bean>-->
 
-	@Bean("s")
+	@Bean("sameer")
 	public Student createStuObj() {
 		Student std = new Student();
 		std.setName("Rahul");

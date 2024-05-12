@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="constructorinjection.Student" id="st1">
+		<constructor-arg value="Priye" type="String" />
+		<constructor-arg value="20" type="int" />
+		<constructor-arg value="priyerock@gmail.com"
+			type="String" />
+	</bean>
+	
+	<bean class="constructorinjection.Student" id="st" c:name="Rahul"
+		c:rollno="20" c:email="priyerock@gmail.com" />
+
+</beans>
